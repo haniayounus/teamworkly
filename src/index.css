@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #252921;
+  background: #f3f1e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --paper: #f3f1e9;
+  --surface: #fffefa;
+  --surface-muted: #eae7dc;
+  --ink: #252921;
+  --muted: #62665c;
+  --line: #d6d2c5;
+  --forest: #31543d;
+  --forest-deep: #243e2d;
+  --forest-wash: #e6ede5;
+  --ochre: #76551c;
+  --ochre-wash: #f2ebd8;
+  --clay: #8a3e32;
+  --clay-wash: #f4e7e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #cbd8c8;
+  color: #1f2f22;
+}
+
+:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 3px;
+}
+
+#TaskList {
+  scrollbar-color: #aaa797 transparent;
+  scrollbar-width: thin;
+}
+
+#TaskList::-webkit-scrollbar {
+  height: 8px;
+}
+
+#TaskList::-webkit-scrollbar-thumb {
+  border: 2px solid var(--paper);
+  border-radius: 999px;
+  background: #aaa797;
+}
